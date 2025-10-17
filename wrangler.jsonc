@@ -17,6 +17,9 @@
 	},
 	"observability": {
 		"enabled": true
+	},
+	"upload": {
+		"command": "npm run deploy"
 	}
 	/**
 	 * Smart Placement
