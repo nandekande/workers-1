@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   
   webpack: (config) => {
     config.watchOptions = {
-      poll: 300,
-      aggregateTimeout: 300,
+      poll: 500,
+      aggregateTimeout: 500,
     };
     return config;
   },
