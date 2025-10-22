@@ -1,0 +1,17 @@
+services:
+  typescript:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: typescript-container
+    image: typescript-image
+    ports:
+      - 3000:3000
+      - 8787:8787
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    restart: always
+volumes:
+  node_modules: {}
